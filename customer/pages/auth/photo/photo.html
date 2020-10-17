@@ -12,37 +12,49 @@
     <body>
         <div class="bodyflex" id="app">
             <div class="dxhead">
-                <div class="title">
+                <div class="titlebar">
                     AI证件照-拍照
                 </div>
             </div>
             <div class="content">
+                <div class="portait">
+                    <img class="main" src="../../../images/main.jpg">
+                    <img class="full" src="../../../images/full.jpg">
+                </div>
+
                 <div class="imgoption">
                     规格: 
-                    <select>                 
+                    <select id="type">                 
                         <option value="custom">自定义</option>
                         <option value="id">身份证</option>
                         <option value="drive">驾驶证</option>
                         <option value="passport">护照</option>
                     </select>
                 </div>
+
                 <div class="imgoption">
                     尺寸:
-                    <select>
+                    <select id="size">
                         <option value="small">小一寸</option>
                         <option value="normal">一寸</option>
                         <option value="large">大一寸</option>
                     </select>
                 </div>
+
                 <div class="imgoption">
                     底色:
-                    <select>
+                    <select id="color">
                         <option value="white">白色</option>
                         <option value="blue">蓝色</option>
                         <option value="red">红色</option>
                     </select>
                 </div>
+
+                <div>
+                    <button class="mainbutton">拍照</button>
+                </div>
             </div>
+
             <ul class="footer flexlayout">
                 <li>
                     <a href="../photo/photo.html">
