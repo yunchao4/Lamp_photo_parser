@@ -16,7 +16,7 @@ body {
 }
 
 ul {
-    width: 100%;
+    width          : 100%;
     list-style-type: none;
 }
 
@@ -24,7 +24,7 @@ ul {
     height     : 3.5rem;
     line-height: 2.5rem;
     text-align : center;
-    background: #1B82D2;
+    background : #1B82D2;
 }
 
 .bodyflex {
@@ -34,29 +34,31 @@ ul {
 }
 
 .content {
-    margin    : 12px;
-    padding   : 12px;
-    flex      : 1;
-    display   : flex;
-    flex-flow : column;
+    margin   : 12px;
+    padding  : 0px;
+    flex     : 1;
+    display  : flex;
+    flex-flow: column;
 }
 
 .titlebar {
-    text-align : center;
-    font-size  : 1.2rem;
-    color      : #FFF;
-    padding: 0.5rem;
-    flex: 1;
+    text-align: center;
+    font-size : 1.2rem;
+    color     : #FFF;
+    padding   : 0.5rem;
+    flex      : 1;
+    font-weight: bold;
 }
 
-.title{
-    flex: 1;
-    font-size: 1.2rem;
+.title {
+    flex        : 1;
+    font-size   : 1.2rem;
     margin-right: 3rem;
 }
 
 .ret {
-    text-align  : left;
+    text-align: left;
+    font-weight: normal;
 }
 
 .flexlayout {
@@ -67,16 +69,16 @@ ul {
 }
 
 .mainbutton {
-    margin-top: 1.5rem;
-    width: 100%;
-    padding   : 1rem 0.5rem;
-    text-align: center;
+    margin-top     : 1.5rem;
+    width          : 100%;
+    padding        : 1rem 0.5rem;
+    text-align     : center;
     text-decoration: none;
-    color: #FFF;
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
-    background: #1B82D2; 
+    color          : #FFF;
+    border         : none;
+    border-radius  : 8px;
+    font-size      : 20px;
+    background     : #1B82D2;
 }
 
 
@@ -90,19 +92,18 @@ ul {
 }
 
 .portait {
-    display      : flex;
-    margin-bottom: 3rem;
+    display        : flex;
+    margin-bottom  : 3rem;
     justify-content: center;
 }
 
 .portait .main {
-    width: 30%;
-    margin:auto;
+    width: 40%;
 }
 
 .portait .full {
-    margin:auto;
-    width: 70%;
+    margin-left: 0.5rem;
+    width      : 70%;
 }
 
 .footer {
@@ -116,12 +117,12 @@ ul {
 }
 
 .footer img {
-    width: 1.5rem;
+    width : 1.5rem;
     height: 1.5rem;
 }
 
 .footer a {
-    color: black;
+    color    : black;
     font-size: 50%;
 }
 
@@ -129,4 +130,3 @@ ul {
     width : 1rem;
     margin: 0 auto;
 }
-

@@ -13,7 +13,7 @@
         <div class="bodyflex" id="app">
             <div class="dxhead">
                 <div class="titlebar flexlayout">
-                    <div class="ret">
+                    <div class="ret" @click="ret">
                         < 返回
                     </div>
                     <div class="title">
@@ -26,16 +26,16 @@
             </div>
             <div class="content">
                 <div class="portait">
-                    <img class="main" src="../../../images/main.jpg">
-                    <img class="full" src="../../../images/full.jpg">
+                    <img class="main" src="../../../images/main.png">
+                    <img class="full" src="../../../images/full.png">
                 </div>
 
                 <p class="info">
                     请先查看带水印预览图，确认没问题再下单，如有问题，可返回重新拍照，下单后可下载无水印成图。
                 </p>
 
-                <div class="purchasetype">
-                    <form>
+                <div class="purchasetype" @change="onTypeChange($event)">
+                    <form id="purchasetype">
                         <label>选购：</label>
                         <input type="radio" name="purchase" value="online" checked>
                         <label>电子照片</label>
@@ -48,7 +48,7 @@
                 <div class="purchasetype">
                     <form>
                         <label>份数：</label>
-                        <select id="number">
+                        <select id="number" @change="onNumChange($event)" disabled>
                             <option value="1">1份</option>
                             <option value="2">2份</option>
                             <option value="3">3份</option>
@@ -66,24 +66,24 @@
                     <form>
                         <label>门店：</label>
                         <!--vue.js 加载门店名 -->
-                        <select id="outlet">
+                        <select id="outlet" disabled>
                             <option></option>
                         </select>
                     </form>
                 </div>
                 <div class="purchasetype">
                     <label>地址：</label>
-                    <textarea rows="2" class="address"></textarea>
+                    <textarea rows="2" class="address" id="address" disabled></textarea>
                 </div>
                 <div class="priceinfo">
                     <p>现场打印含：电子照片2元，打印5元</p>
                 </div>
                 <div class="price">
                     <label>￥</label>
-                    <label class="number">7</label>
+                    <label class="number">{{price}}</label>
                 </div>
                 <div>
-                    <button class="mainbutton">下单</button>
+                    <button class="mainbutton" @click="pay">下单</button>
                 </div>
             </div>
         </div>

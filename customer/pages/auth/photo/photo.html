@@ -18,13 +18,13 @@
             </div>
             <div class="content">
                 <div class="portait">
-                    <img class="main" src="../../../images/main.jpg">
-                    <img class="full" src="../../../images/full.jpg">
+                    <img class="main" src="../../../images/main.png">
+                    <img class="full" src="../../../images/full.png">
                 </div>
 
                 <div class="imgoption">
                     规格: 
-                    <select id="type">                 
+                    <select id="types" @change="onTypeChange($event)">                 
                         <option value="custom">自定义</option>
                         <option value="id">身份证</option>
                         <option value="drive">驾驶证</option>
@@ -34,7 +34,7 @@
 
                 <div class="imgoption">
                     尺寸:
-                    <select id="size">
+                    <select id="sizes">
                         <option value="small">小一寸</option>
                         <option value="normal">一寸</option>
                         <option value="large">大一寸</option>
@@ -43,7 +43,7 @@
 
                 <div class="imgoption">
                     底色:
-                    <select id="color">
+                    <select id="colors">
                         <option value="white">白色</option>
                         <option value="blue">蓝色</option>
                         <option value="red">红色</option>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div>
-                    <button class="mainbutton">拍照</button>
+                    <button class="mainbutton" @click="capture">拍照</button>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../history/history.html">
                         <div>
                             <img src="../../../images/order.svg">
                         </div>
@@ -83,9 +83,6 @@
             </ul>
         </div>
         
-
-
-
         <!--引入vue.js数据渲染引擎-->
         <script src="../../../libs/vue.min.js"></script>
         <!--公共JS代码-->

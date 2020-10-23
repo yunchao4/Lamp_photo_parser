@@ -3,8 +3,8 @@ function toPage(targetPage) {
     open(targetPage)
 }
 
-function toPage(folder, targetPage) {
-    open(folder, targetPage)
+function toPageByFolder(folder, targetPage) {
+    openByFolder(folder, targetPage)
 }
 
 
@@ -13,7 +13,7 @@ function open(targetPage) {
     location.href = '../' + targetPage + '/' + targetPage + '.html'
 }
 
-function open(folder, targetPage) {
+function openByFolder(folder, targetPage) {
     location.href = '../../' + folder + '/' + targetPage + '/' + targetPage + '.html'
 }
 

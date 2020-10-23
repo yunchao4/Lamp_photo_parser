@@ -3,8 +3,11 @@
 }
 .purchasetype{
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;  
+}
+
+.purchasetype form{
+    justify-content: center;
 }
 
 .purchasetype input{
@@ -12,14 +15,14 @@
 }
 
 .purchasetype select{
-    width: 80%;
+    width: 86%;
     line-height: normal;
     padding: 0.5rem;
     border-radius: 4px;
 }
 
 .purchasetype .address{
-    width: 80%;
+    width: 85%;
     height: 100%;
     border-radius: 4px;
 }
@@ -36,3 +39,4 @@
     font-size: 2rem;
     color: red;
 }
+
