@@ -14,6 +14,6 @@ var vm = new Vue({
         }
     },
     created:function(){
-        //这里要获取到所有的历史记录，存到list中
+        //TODO: 这里要获取到所有的历史记录，存到list中
     }
 })

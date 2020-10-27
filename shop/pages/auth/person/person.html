@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>个人中心页/person</title>
+    <link rel="stylesheet" type="text/css" href="person.css" />
+    <link rel="stylesheet" href="../../../../resourse/fontawesome-free-5.14.0-web/css/all.min.css" />
+</head>
+
+<body class="bodyimg">
+    <div class="bodyflex" id="mypage">
+        <!--侧边导航-->
+        <div class="nav" id="nav">
+            <div class="logo">
+                <img class="logoimg" src="../../../images/logo_per.png">
+            </div>
+            <div class="navbox" @click="work">
+                <div class="navimg"><img style="width: 15px;" src="../../../images/u40.png"></div>
+                <div class="navfont"><span>工作台</span></div>
+            </div>
+            <div class="navbox" @click="orderform">
+                <div class="navimg"><img style="width: 15px;" src="../../../images/u37.png"></div>
+                <div class="navfont"><span>订单管理</span></div>
+            </div>
+        </div>
+        <div class="rightpage">
+            <!--顶部栏-->
+            <div class="topbar" id="topbar">
+                <div class="topbarimg"><i class="fas fa-list-ul"></i></div>
+                <div class="headflex">
+                    <div class="headbox"><img class="headimg" src="../../../images/head.jpg"></div>
+                    <div class="headbox"><span class="headfont">admin</span></div>
+                </div>
+            </div>
+            <!--个人中心-->
+            <div class="index" id="index">
+                <div class="indextitle">
+                    个人中心
+                </div>
+                <div class="content">
+                    <span class="subtitle">账号密码</span>
+                    <div class="placeholder">
+                        <span style="color: #696969;">当前密码强度：</span>
+                        <span style="color: #52C41A;">良好</span>
+                        <span class="changebut" @click="showbox">修改</span>
+                    </div>
+                    <div class="line"></div>
+
+                </div>
+            </div>
+            <!--修改密码弹窗-->
+            <div class="popbox" id="popbox">
+                <div class="poptitle">
+                    <span>修改密码</span>
+                    <i class="fas fa-times" @click="closebox"></i>
+                    <!--span class="close">X</span>-->
+                </div>
+
+                <div class="popcontent">
+                    <div class="inputbox">
+                        <span>&emsp;原密码</span>
+                        <input class="inputstyle" placeholder="请输入原密码" v-model="oldpw">
+                    </div>
+                    <div class="inputbox">
+                        <span>&emsp;新密码</span>
+                        <input class="inputstyle" placeholder="请输入新密码" type="password" v-model="newpw">
+                    </div>
+                    <div class="inputbox">
+                        <span>确认密码</span>
+                        <input class="inputstyle" placeholder="请输入确认密码" type="password" v-model="confirmpw">
+                    </div>
+                </div>
+                <div class="popbutton">
+                    <button class="cancle" @click="cancle">取 消</button>
+                    <button class="confirm" @click="confirm">确 认</button>
+                </div>
+            </div>
+            <div class="footer">
+                copyright©2020云超实习第四组
+            </div>
+        </div>
+    </div>
+    <!--引入vue-->
+    <script src="../../../../lib/vue.min.js"></script>
+    <!--引入后端交互工具-->
+    <script src=""></script>
+    <!--引入公用JS代码-->
+    <script src="../../../../app.js"></script>
+    <!--本页JS代码-->
+    <script src="person.js"></script>
+</body>
+
+</html>

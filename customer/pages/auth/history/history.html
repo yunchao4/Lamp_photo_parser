@@ -19,7 +19,7 @@
 			<div class="content">
 				<div class="Order" v-for="(item,i) in list" :key="i" @click="enter(item)">
 					<div class="photo">
-						<img src="../../../images/examplepic.png" />
+						<img src= {{item.photo}} />
 					</div>
 					<div class="rightDetail">
 						<div class="photoinfo">
@@ -32,35 +32,10 @@
 						</div>
 					</div>
 						<div class="rightArrow">
-							<img src="../../../images/Toright.png" />
+							<img src="../../../images/toRight.png" />
 						</div>
 				</div>
 			</div>
-			<!--
-			<ul class="footer flexlayout">
-				<li>
-					<a href="../photo/photo.html">
-						<div>
-							<img src="../../../images/index1.png" />
-						</div>首页
-					</a>
-				</li>
-				<li>
-					<a href="../history/history.html" style="color:#1296db">
-						<div>
-							<img src="../../../images/history2.png" />
-						</div>历史
-					</a>
-				</li>
-				<li>
-					<a href="../my/my.html">
-						<div>
-							<img src="../../../images/my1.png" />
-						</div>我的
-					</a>
-				</li>
-			</ul>
-		-->
 			<ul class="footer flexlayout">
 					<li>
 						<a href="../photo/photo.html">

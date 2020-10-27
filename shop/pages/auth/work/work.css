@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.bodyimg {
+    display: flex;
+    background-color: rgba(240, 242, 245, 1);
+}
+
+.bodyflex {
+    display: flex;
+    width: 100%;
+    filter: none;
+}
+
+.nav {
+    display: flex;
+    background-color: rgba(0, 21, 41, 1);
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    background-color: #00284D;
+}
+
+.logoimg {
+    display: flex;
+    margin: 1rem 1.5rem;
+    width: 60%;
+}
+
+.navbox {
+    color: #c0c0c0;
+    cursor: pointer;
+    background-color: black;
+}
+
+.navselect {
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #157EDF;
+}
+
+.navimg {
+    margin: 1rem 0.5rem 1rem 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navfont {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rightpage {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    background-color: #FFFFFF;
+    height: 8%;
+    border: none;
+    justify-content: space-between;
+}
+
+.topbar i {
+    font-size: 30px;
+}
+
+.topbarimg {
+    display: flex;
+    margin: 0.5rem auto 0.5rem 0.5rem;
+    transform: scale(0.5);
+}
+
+.headflex {
+    display: flex;
+    margin-top: 1rem;
+    vertical-align: middle;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.headbox {
+    display: inline-block;
+}
+
+.headimg {
+    height: 24px;
+    width: 24px;
+}
+
+.headfont {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    color: #696969;
+}
+
+.index {
+    margin: 2rem 2rem;
+}
+
+.sales_content {
+    display: flex;
+}
+
+.sales_item {
+    width: 20%;
+    margin-right: 1.5rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    color: #c0c0c0;
+}
+
+.sales_value {
+    margin-top: 0.5rem;
+    color: #000000;
+    font-size: 28px;
+}
+
+.sales_aver {
+    margin-top: 0.3rem;
+    padding-top: 0.3rem;
+    border-top: 1px solid;
+    border-color: #dcdcdc;
+    color: #696669;
+}
+
+.sales_chart {
+    margin-top: 2rem;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    width: 90%;
+}
+
+.show_chart {
+    width: 720px;
+    height: 400px;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+    background-color: rgba(240, 242, 245, 1);
+    color: #c0c0c0;
+}

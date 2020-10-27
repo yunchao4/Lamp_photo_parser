@@ -1,0 +1,51 @@
+.bodyimg {
+    background-image: url(../../../images/bg.png);
+    background-attachment: fixed;
+}
+.bodyflex {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.logoimg {
+    width: 215px;
+}
+
+.titlestyle {
+    margin-top: 0.5rem;
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+.inputbox {
+    margin: 2rem auto; 
+    display: flex;
+    background-color: #FFFFFFFF;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 4px;
+    border-width: 1px;
+    color:#f5f5f5;
+    width: 25%;
+    height: 40px;
+}
+.span {
+    margin: auto 0.5rem;
+}
+.inputstyle {
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    flex:1;
+    font-size: 16px;
+}
+.button {
+    background-color: #1890FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 25%;
+    height: 40px;
+    font-size: 16px;
+}

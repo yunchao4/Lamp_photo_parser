@@ -68,7 +68,7 @@ ul {
     justify-content: center;
 }
 
-.mainbutton {
+.mainbutton, .normalbutton {
     margin-top     : 1.5rem;
     width          : 100%;
     padding        : 1rem 0.5rem;
@@ -79,6 +79,12 @@ ul {
     border-radius  : 8px;
     font-size      : 20px;
     background     : #1B82D2;
+}
+
+.normalbutton {
+    background: #FFF;
+    color: #000;
+    border: 1px solid black;
 }
 
 

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.bodyimg {
+    display: flex;
+    background-color: rgba(240, 242, 245, 1);
+}
+
+.bodyflex {
+    display: flex;
+    width: 100%;
+    filter: none;
+}
+
+.nav {
+    display: flex;
+    background-color: rgba(0, 21, 41, 1);
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    background-color: #00284D;
+}
+
+.logoimg {
+    display: flex;
+    margin: 1rem 1.5rem;
+    width: 60%;
+}
+
+.navbox {
+    color: #c0c0c0;
+    cursor: pointer;
+    background-color: black;
+}
+
+.navimg {
+    margin: 1rem 0.5rem 1rem 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navfont {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rightpage {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    background-color: #FFFFFF;
+    height: 8%;
+    border: none;
+    justify-content: space-between;
+}
+
+.topbar i {
+    font-size: 30px;
+}
+
+.topbarimg {
+    display: flex;
+    margin: 0.5rem auto 0.5rem 0.5rem;
+    transform: scale(0.5);
+}
+
+.headflex {
+    display: flex;
+    margin-top: 1rem;
+    vertical-align: middle;
+    margin-right: 2.5rem;
+}
+
+.headbox {
+    display: inline-block;
+}
+
+.headimg {
+    height: 24px;
+    width: 24px;
+}
+
+.headfont {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    color: #696969;
+}
+
+.index {
+    margin: 2rem 2rem;
+    background-color: #FFFFFF;
+    height: 80%;
+}
+
+.indextitle {
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+    font-size: 14px;
+}
+
+.placeholder {
+    display: flex;
+    margin-top: 0.25rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.changebut {
+    color: #1890FF;
+    margin-left: auto;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.line {
+    margin-top: 1.5rem;
+    border-bottom: 1px solid;
+    margin-right: 4rem;
+    border-color: #dcdcdc;
+    height: 1px;
+}
+
+.popbox {
+    position: absolute;
+    width: 32%;
+    background-color: #FFFFFF;
+    z-index: 999;
+    margin: 10rem 20rem;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    visibility: hidden;
+}
+
+.poptitle {
+    display: flex;
+    font-size: 14px;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.popbox i {
+    margin-right: 0.5rem;
+    color: #dcdcdc;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close {
+    margin-left: auto;
+    margin-right: 0.5rem;
+    color: #d3d3d3;
+}
+
+.popcontent {
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #dcdcdc;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.inputbox {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1rem;
+}
+
+.inputstyle {
+    margin-left: 0.25rem;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+input::-webkit-input-placeholder {
+    color: #dcdcdc;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #dcdcdc;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #dcdcdc;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #dcdcdc;
+}
+
+.popbutton {
+    margin: 1rem 1.5rem 1rem auto;
+    text-align: right;
+    font-size: 16px;
+}
+
+.cancle {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.confirm {
+    background-color: #1890FF;
+    border-radius: 4px;
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+    background-color: rgba(240, 242, 245, 1);
+    color: #c0c0c0;
+}
