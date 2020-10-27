@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>订单管理页/order</title>
+        <link rel="stylesheet" type="text/css" href="add.css" />
+        <link rel="stylesheet" href="../../../resource/fontawesome-free-5.14.0-web/css/all.min.css" />
+    </head>
+
+    <body class="bodyimg">
+        <div class="bodyflex" id="mypage">
+            <!--侧边导航-->
+            <div class="nav" id="nav">
+                <div class="logo"> <img class="logoimg" src="../../../images/logo_per.png"> </div>
+                <div class="navbox" @click="work">
+                    <div class="navimg"><img style="width: 15px;" src="../../../images/u40.png"></div>
+                    <div class="navfont"><span>工作台</span></div>
+                </div>
+                <div class="navselect" @click="orderform">
+                    <div class="navimg"><img style="width: 15px;" src="../../../images/u37.png"></div>
+                    <div class="navfont"><span>订单管理</span></div>
+                </div>
+                <div class="navstore" @click="storeform">
+                    <div class="navimg"><img style="width: 15px;" src="../../../images/u37.png"></div>
+                    <div class="navfont"><span>门店管理</span></div>
+                </div>
+            </div>
+            <div class="rightpage">
+                <!--顶部栏-->
+                <div class="topbar" id="topbar">
+                    <div class="topbarimg"><i class="fas fa-list-ul"></i></div>
+                    <div class="headflex" @click="mypage">
+                        <div class="headbox"><img class="headimg" src="../../../images/head.jpg"></div>
+                        <div class="headbox"><span class="headfont">admin</span></div>
+                    </div>
+                </div>
+                <div class="index">
+                    <div class="indextitle"> 新增门店 </div>
+                    <div class="inputdata">
+                        <div class="demo-input-suffix">
+                            <p>名称:</p>
+                            <input class="input" placeholder="请选择日期" v-model="input1">
+                            </input>
+                        </div>
+                        <div class="demo-input-suffix">
+                            <p>地址:</p>
+                            <textarea placeholder="请输入内容" cols="1" class="text" v-model="textarea"> </textarea>
+                        </div>
+                        <div class="demo-input-suffix">
+                            <p>联系人:</p>
+                            <input class="input" placeholder="请选择日期" v-model="input2" />
+                        </div>
+                        <div class="demo-input-suffix">
+                            <p>联系电话:</p>
+                            <input class="input" placeholder="请选择日期" v-model="input3">
+                            </input>
+                        </div>
+                        <div class="button" @click="mpost"> 确定 </div>
+                    </div>
+                </div>
+            </div>
+            <!--引入vue.js数据渲染引擎-->
+            <script src="../../../lib/vue.min.js"></script>
+            <!--引入后端交互工具-->
+            <script src=""></script>
+            <!--引入公共JS代码-->
+            <script src="../../../app.js"></script>
+            <!--本页JS代码-->
+            <script src="add.js"></script>
+    </body>
+
+</html>

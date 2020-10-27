@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.bodyimg {
+    display: flex;
+    background-color: rgba(240, 242, 245, 1);
+}
+
+.bodyflex {
+    display: flex;
+    width: 100%;
+    filter: none;
+}
+
+.nav {
+    display: flex;
+    background-color: rgba(0, 21, 41, 1);
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    background-color: #00284D;
+}
+
+.logoimg {
+    display: flex;
+    margin: 1rem 1.5rem;
+    width: 60%;
+}
+
+.navbox {
+    color: #c0c0c0;
+    cursor: pointer;
+    background-color: black;
+}
+
+.navselect {
+    color: #c0c0c0;
+    cursor: pointer;
+    background-color: black;
+}
+
+.navstore{
+	color: #FFFFFF;
+    cursor: pointer;
+    background-color: #157EDF;
+}
+
+.navimg {
+    margin: 1rem 0.5rem 1rem 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navfont {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rightpage {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    background-color: #FFFFFF;
+    height: 8%;
+    border: none;
+    justify-content: space-between;
+}
+
+.topbar i {
+    font-size: 30px;
+}
+
+.topbarimg {
+    display: flex;
+    margin: 0.5rem auto 0.5rem 0.5rem;
+    transform: scale(0.5);
+}
+
+.headflex {
+    display: flex;
+    margin-top: 1rem;
+    vertical-align: middle;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.headbox {
+    display: inline-block;
+}
+
+.headimg {
+    height: 24px;
+    width: 24px;
+}
+
+.headfont {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    color: #696969;
+}
+
+.index {
+    margin: 1rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.indextitle {
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.demo-input-suffix{
+	margin-top: 30px;
+	margin-left: 350px;
+	margin-right: 300px;
+	display: flex;
+	padding-left: 0px;
+}
+.input{
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 20px;
+	flex: 1;
+}
+
+.text{
+	margin-left: 10px;
+	height: 50px;
+	flex: 1;
+}
+
+.inputdata{
+	display:flex;
+	flex-flow: column;
+	
+}
+.inputdata p{
+	text-align: right;
+	width:80px;
+}
+.button {
+	background-color: rgba(64,158,255,1.00);
+	width: 150px;
+	margin-left: 540px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	height: 34px;
+	font-size: x-large;
+	color: rgba(255,255,255,1.00);
+	
+}

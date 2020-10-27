@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>订单管理页/order</title>
+    <link rel="stylesheet" type="text/css" href="store.css" />
+    <link rel="stylesheet" href="../../../resource/fontawesome-free-5.14.0-web/css/all.min.css" />
+</head>
+
+<body class="bodyimg">
+    <div class="bodyflex" id="mypage">
+        <!--侧边导航-->
+        <div class="nav" id="nav">
+            <div class="logo">
+                <img class="logoimg" src="../../../images/logo_per.png">
+            </div>
+            <div class="navbox" @click="work">
+                <div class="navimg"><img style="width: 15px;" src="../../../images/u40.png"></div>
+                <div class="navfont"><span>工作台</span></div>
+            </div>
+            <div class="navselect" @click="orderform">
+                <div class="navimg"><img style="width: 15px;" src="../../../images/u37.png"></div>
+                <div class="navfont"><span>订单管理</span></div>
+            </div>
+            <div class="navstore" @click="storeform">
+                <div class="navimg"><img style="width: 15px;" src="../../../images/u37.png"></div>
+                <div class="navfont"><span>门店管理</span></div>
+            </div>
+        </div>
+        <div class="rightpage">
+            <!--顶部栏-->
+            <div class="topbar" id="topbar">
+                <div class="topbarimg"><i class="fas fa-list-ul"></i></div>
+                <div class="headflex" @click="mypage">
+                    <div class="headbox"><img class="headimg" src="../../../images/head.jpg"></div>
+                    <div class="headbox"><span class="headfont">admin</span></div>
+                </div>
+            </div>
+            <div class="index">
+                <div class="indextitle">
+                    门店列表
+                </div>
+                <div>
+                	<button class="button" @click="add">+添加</button>
+                </div>
+                <div class="store_list">
+                    <div class="store_item">
+                        <div class="store_details">
+                            <div class="store_img">
+                                <img class="photo" src="../../../images/head.jpg">
+                            </div>
+                            <div>
+                                <div class="store_name">广大店</div>
+                                <div class="nextline">广州大学商业中心</div>
+                            </div>
+                        </div>
+                        <div class="store_phone">
+                            <div>
+                                联系电话
+                            </div>
+                            <div class="nextline">
+                                11111111
+                            </div>
+                        </div>
+                        <div class="store_human">
+                            <div>
+                                联系人
+                            </div>
+                            <div class="nextline">
+                                李**
+                            </div>
+                        </div>
+                        <div class="store_time">
+                            <div>
+                                创建时间
+                            </div>
+                            <div class="nextline">
+                                2020-10-24 14：30
+                            </div>
+                        </div>
+                        <div class="store_oper" @click="edit">
+                            编辑信息
+                        </div>
+                    </div>
+					<div class="store_item">
+                        <div class="store_details">
+                            <div class="store_img">
+                                <img class="photo" src="../../../images/head.jpg">
+                            </div>
+                            <div>
+                                <div class="store_name">广大店</div>
+                                <div class="nextline">广州大学商业中心</div>
+                            </div>
+                        </div>
+                        <div class="store_phone">
+                            <div>
+                                联系电话
+                            </div>
+                            <div class="nextline">
+                                11111111
+                            </div>
+                        </div>
+                        <div class="store_human">
+                            <div>
+                                联系人
+                            </div>
+                            <div class="nextline">
+                                李**
+                            </div>
+                        </div>
+                        <div class="store_time">
+                            <div>
+                                创建时间
+                            </div>
+                            <div class="nextline">
+                                2020-10-24 14：30
+                            </div>
+                        </div>
+                        <div class="store_oper" @click="edit">
+                            编辑信息
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--引入vue.js数据渲染引擎-->
+    <script src="../../../lib/vue.min.js"></script>
+    <!--引入后端交互工具-->
+    <script src=""></script>
+    <!--引入公共JS代码-->
+    <script src="../../../app.js"></script>
+    <!--本页JS代码-->
+    <script src="store.js"></script>
+</body>
+
+</html>
